@@ -37,12 +37,13 @@ while i < T:
         sr[j] = pl(np.float64(j*1e-9), i)
         csr[j] = rjl(np.float64(j), i)
         j += 1
-    plt.plot(w, sr)
+    plt.plot(w, sr, label="T = " + str(i))
     i += 1000
 
 # plt.plot(w, csr)
 # plt.axis((0, 2000, 0, 3.3e-13))
 plt.grid()
+plt.legend()
 plt.xlabel('Wavelength (nm)')
 plt.ylabel("Spectral Radiance")
 plt.savefig("bc.png", dpi=600)

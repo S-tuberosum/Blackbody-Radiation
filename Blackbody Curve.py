@@ -45,6 +45,7 @@ while i < T:
 plt.grid()
 plt.xlabel('Wavelength (nm)')
 plt.ylabel("Spectral Radiance")
+plt.savefig("bc.png", dpi=600)
 plt.show()
 
 

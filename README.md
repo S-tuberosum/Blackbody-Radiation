@@ -6,4 +6,4 @@ Plotting the spectral radiance as a function of wavelength.
 
 ## Dependencies
 
-Numpy, matplotlib.
+numpy, matplotlib.
